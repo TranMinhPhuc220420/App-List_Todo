@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c776f8e511.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>List-TODO</title>
+  </head>
+  <body>
+    <div id="main">
+      <nav id="nav_bar" class="navbar">
+        <button id="btn_close_nav">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+
+        <div class="nav-top">
+          <h1>LIST TODO</h1>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="list-menu">
+            <li class="item-menu">
+              <a href="#">Home</a>
+            </li>
+            <li class="item-menu">
+              <a href="#">About Us</a>
+            </li>
+            <li class="item-menu">
+              <a href="#">Blog</a>
+            </li>
+            <li class="item-menu">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-bottom">
+          <p>This app make Tran Minh Phuc =))</p>
+        </div>
+      </nav>
+
+      <!-- Header todo task -->
+      <div class="header">
+        <!-- Action bar -->
+        <div class="action-bar">
+          <button id="btn_active_nav" class="btn-bar">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <span class="app_name">ACTIVITIES</span>
+
+          <button class="btn-task">
+            <i class="fas fa-clipboard-list"></i>
+          </button>
+        </div>
+        <!-- /Action bar -->
+
+        <!-- form search task -->
+        <div class="search">
+          <form action="#" class="form-search">
+            <input
+              type="text"
+              name="key"
+              id="input_search"
+              placeholder="Search"
+            />
+            <button class="btn-submit" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- /form search task -->
+
+        <!-- button add new -->
+        <div class="add-new-task">
+          <button id="btn_add_new_task">+ Add New</button>
+        </div>
+        <!-- /button add new -->
+      </div>
+      <!-- /Header todo task -->
+
+      <!-- Content todo task -->
+      <div class="content">
+        <ul class="list-task" id="list_task">
+          <!-- <li class="item-task">
+            <span class="color red"></span>
+            <p class="content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <input
+              type="checkbox"
+              name="check_complete_task"
+              class="check-complete-task"
+              value="true"
+            />
+          </li> -->
+        </ul>
+      </div>
+      <!-- /Content todo task -->
+
+      <div id="window_add_new_task">
+        <button id="close_window">
+          <i class="fas fa-times"></i>
+        </button>
+        <input type="text" name="name_new_task" id="name_new_task" placeholder="Name new task ..."/>
+        <ul class="list-color">
+          <li class="item-color red color"><i class="fas fa-check"></i></li>
+          <li class="item-color blue color"></li>
+          <li class="item-color yellow color"></li> 
+          <li class="item-color green color"></li>
+        </ul>
+        
+        <button id="btn_sub_add">Add task</button>
+      </div>
+
+      <div id="effect_blur" class="effect-blur"></div>
+    </div>
+
+    <script src="public/js/main.js"></script>
+  </body>
+</html>
